@@ -1,0 +1,229 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+header{
+  position: relative;
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  padding: 10px;
+}
+.logo{
+  margin-left: 10px;
+  font-size: 2em;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+  margin: 0 40px 0 0;
+}
+nav ul li{
+  margin: 0 20px 0 20px;
+  color: white;
+  font-size: 1.2em;
+}
+nav ul li a:hover{
+  color: red;
+}
+.pages{
+  display: flex;
+  justify-content: flex-end;
+}
+a{
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+#getstarted{
+  margin-right: 20px;
+  padding: 5px;
+  border: 2px solid white;
+  font-size: 1em;
+  box-shadow: none;
+  background: none;
+  border-radius: 5%;
+  outline: none;
+  color: white;
+}
+#getstarted:hover{
+  border: 2px solid red;
+  color: red;
+}
+
+/*  Banner   */
+#banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(img1.jpg);
+  background-position: center;
+}
+.banner-container{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-text{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+}
+.banner-button{
+  display: flex;
+}
+.banner-button button{
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid white;
+  font-size: 1em;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 5%;
+  outline: none;
+  color: white;
+}
+.banner-button button:hover{
+  border: 2px solid red;
+  color: red;
+  background: white;
+}
+
+/*    About us   */
+#aboutus{
+  /*height: 100vh;*/
+  background: red;
+}
+.about-container{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+  background: cyan;
+}
+.about-text{
+  margin: 10px;
+  width: 50%;
+  height: 70%;
+}
+.about-video{
+  margin: 10px;
+  width: 50%;
+  height: 70%;
+  background: black;
+}
+.about-video video{
+  width: 100%;
+  height: 100%;
+}
+
+/*   Our Services  */
+#ourservices{
+  /*height: 100vh;*/
+  padding: 10px;
+  background: red;
+}
+.service-container{
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  height: 50%;
+  background: yellow;
+}
+.service-head{
+  text-align: center;
+}
+.service-cards{
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card{
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  width: 250px;
+  height: 350px;
+  flex-direction: column;
+  background: pink;
+}
+.card-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  background: red;
+}
+.card-image img{
+  width: 90%;
+  height: 100%;
+  object-fit: cover ;
+}
+.card-text{
+  margin: 10px;
+  text-align: center;
+}
+
+
+/*    Clients    */
+#clients{
+  height: 50vh;
+  background: blue;
+}
+
+
+/*   Get in touch   */
+#getintouch{
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  background: orange;
+}
+.getintouch-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*   Footer    */
+footer{
+  display: flex;
+  padding: 20px;
+  justify-content: space-evenly;
+  background: black;
+  color: white;
+}
+footer h1{
+  text-align: center;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li{
+  margin: 10px;
+}
