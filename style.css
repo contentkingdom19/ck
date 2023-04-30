@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
+
+
+/*      Header      */
 header{
-  position: relative;
+  position: fixed;
   height: 10%;
   width: 100%;
-  position: fixed;
-  z-index: 1;
+  z-index: 99;
 }
 nav{
   display: flex;
@@ -19,11 +23,13 @@ nav{
 .logo{
   margin-left: 10px;
   font-size: 2em;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 nav ul{
   display: flex;
   list-style: none;
-  margin: 0 40px 0 0;
+  margin: auto 40px auto 0;
 }
 nav ul li{
   margin: 0 20px 0 20px;
@@ -44,7 +50,7 @@ a{
 }
 #getstarted{
   margin-right: 20px;
-  padding: 5px;
+  padding: 5px 20px 5px 20px;
   border: 2px solid white;
   font-size: 1em;
   box-shadow: none;
@@ -52,11 +58,14 @@ a{
   border-radius: 5%;
   outline: none;
   color: white;
+  letter-spacing: .8px;
 }
 #getstarted:hover{
   border: 2px solid red;
   color: red;
 }
+
+
 
 /*  Banner   */
 #banner{
@@ -97,22 +106,28 @@ a{
   border: 2px solid white;
   font-size: 1em;
   box-shadow: none;
-  background: transparent;
+  /*background: transparent;*/
   border-radius: 5%;
   outline: none;
-  color: white;
+  /*color: white;*/
+  transition: .5s;
 }
 .banner-button button:hover{
   border: 2px solid red;
-  color: red;
+  color: black;
   background: white;
 }
+#get_in_touch{
+  background: transparent;
+  color: white;
+}
+#get_in_touch:hover{
+  background: white;
+  color: black;
+}
+
 
 /*    About us   */
-#aboutus{
-  /*height: 100vh;*/
-  background: red;
-}
 .about-container{
   position: relative;
   display: flex;
@@ -124,8 +139,16 @@ a{
 }
 .about-text{
   margin: 10px;
+  padding: 10px;
   width: 50%;
   height: 70%;
+  text-align: left;
+}
+.about-text h2{
+  margin: 10px 0 10px 0;
+}
+.about-text p{
+  margin: 10px 0 10px 0;
 }
 .about-video{
   margin: 10px;
@@ -138,15 +161,13 @@ a{
   height: 100%;
 }
 
+
+
+
 /*   Our Services  */
-#ourservices{
-  /*height: 100vh;*/
-  padding: 10px;
-  background: red;
-}
 .service-container{
   position: relative;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   height: 50%;
   background: yellow;
@@ -169,28 +190,59 @@ a{
   background: pink;
 }
 .card-image{
+  margin: 10px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 30%;
-  background: red;
 }
 .card-image img{
   width: 90%;
   height: 100%;
-  object-fit: cover ;
+  object-fit: cover;
 }
 .card-text{
+  position: relative;
   margin: 10px;
+  height: 70%;
+}
+.card .card-text h2, .card .card-text hr, .card .card-text p{
   text-align: center;
 }
+.card .card-text hr{
+  margin: 10px;
+  border: 1px solid red;
+}
+.card-text h2{
+  font-size: 1.2em;
+}
+#checkout_button{
+  position: absolute;
+  padding: 7px;
+  background: white;
+  box-shadow: none;
+  border: 2px solid white;
+  color: black;
+  outline: none;
+  bottom: 0;
+  right: 31%;
+}
+#checkout_button:hover{
+  border: 2px solid red;
+}
+
 
 
 /*    Clients    */
 #clients{
   height: 50vh;
   background: blue;
+}
+.client-container h2{
+  text-align: center;
+  padding: 10px;
+  color: white;
 }
 
 
@@ -208,6 +260,25 @@ a{
   justify-content: center;
   align-items: center;
 }
+#getintouch-button{
+  margin: 10px;
+  padding: 5px;
+  border: 2px solid white;
+  font-size: 1em;
+  box-shadow: none;
+  /*background: transparent;*/
+  border-radius: 5%;
+  outline: none;
+  /*color: white;*/
+  transition: .5s;
+}
+#getintouch-button:hover{
+  border: 2px solid red;
+  color: black;
+  background: white;
+}
+
+
 
 
 /*   Footer    */
