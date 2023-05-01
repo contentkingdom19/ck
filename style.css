@@ -9,11 +9,13 @@
 /*      Header      */
 header{
   position: fixed;
+  position: relative;
   height: 10%;
   width: 100%;
   z-index: 99;
 }
 nav{
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,7 +78,7 @@ a{
   height: 100vh;
   background-size: cover;
   background-attachment: fixed;
-  background-image: url(img1.jpg);
+  background-image: url(img/img1.jpg);
   background-position: center;
 }
 .banner-container{
@@ -297,4 +299,70 @@ footer ul{
 }
 footer ul li{
   margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!ABOUT PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.aboutpage-container{
+  border: 2px solid red;
+  position: relative;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!CONTACT PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.contactpage-container{
+  border: 2px solid red;
+  position: relative;
+  padding: 20px;
+}
+.contactpage-container h2, .contactpage-container input, .contactpage-container textarea, .contactpage-container button{
+  margin: 0 0 10px 0;
 }
