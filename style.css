@@ -481,6 +481,62 @@ footer ul li{
 
 
 
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!!!SERVICES PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.servicepage-container{
+  padding: 20px;
+  background: #001;
+  color: #fff;
+}
+.servicepageheader{
+  display: flex;
+  justify-content: center;
+}
+.servicepage-container .servicepageheader h2{
+  position: relative;
+  text-align: center;
+  padding: 7px;
+}
+.servicepage-container .servicepageheader h2::after{
+  content: '';
+  position: absolute;
+  border: 1px solid #b88a44;
+  left: 0;
+  bottom: 0;
+  width: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*!!!!!!!!!!!!!!!!!!!!!CONTACT PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .contactpage-container{
   position: relative;
