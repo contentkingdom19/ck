@@ -23,10 +23,16 @@ nav{
   padding: 10px;
 }
 .logo{
+  width: 60px;
+  height: auto;
   margin-left: 10px;
   font-size: 2em;
   font-weight: 800;
   text-transform: uppercase;
+}
+.logo img{
+  max-width: 100%;
+  max-height: 100%;
 }
 nav ul{
   display: flex;
@@ -39,7 +45,7 @@ nav ul li{
   font-size: 1.2em;
 }
 nav ul li a:hover{
-  color: red;
+  color: #f7ef8a;
 }
 .pages{
   display: flex;
@@ -53,7 +59,7 @@ a{
 #getstarted{
   margin-right: 20px;
   padding: 5px 20px 5px 20px;
-  border: 2px solid white;
+  border: 2px solid #f7ef8a;
   font-size: 1em;
   box-shadow: none;
   background: none;
@@ -61,10 +67,12 @@ a{
   outline: none;
   color: white;
   letter-spacing: .8px;
+  transition: .3s;
 }
 #getstarted:hover{
-  border: 2px solid red;
-  color: red;
+  /*border: 2px solid red;*/
+  background: #b88a44;
+  color: white;
 }
 
 
@@ -88,8 +96,17 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: .4;
+  transform: translate(0, 40%);
+  transition: transform 1s ease, opacity 2s;
+  /*transition: opacity 5s ease;*/
+}
+.banner-container.banner-container-loaded{
+  transform: translate(0, 0); 
+  opacity: 1;
 }
 .banner-text{
+  position: relative;
   width: 100%;
   height: 50%;
   display: flex;
@@ -99,34 +116,61 @@ a{
   color: white;
   font-size: 2em;
 }
+.banner-text img{
+  max-height: 100%;
+  max-width: 100%;
+}
 .banner-button{
   display: flex;
+  position: relative;
 }
 .banner-button button{
   margin: 10px;
   padding: 5px;
-  border: 2px solid white;
+  border: 2px solid #ffc000;;
   font-size: 1em;
   box-shadow: none;
   /*background: transparent;*/
   border-radius: 5%;
   outline: none;
-  /*color: white;*/
-  transition: .5s;
+  color: #ffc000;
+  transition: .3s;
 }
 .banner-button button:hover{
-  border: 2px solid red;
-  color: black;
-  background: white;
+  color: white;
+  background: #ffc000;
 }
 #get_in_touch{
   background: transparent;
   color: white;
 }
 #get_in_touch:hover{
+  border: 2px solid #fff;
   background: white;
   color: black;
 }
+#check_out_services{
+  border: none;
+  background: black;
+}
+#check_out_services:hover{
+  border: none;
+  color: #000;
+  background: #ffffff;
+}
+
+/******/
+#line{
+  width: 70px;
+  height: 2px;
+  border: 2px solid red;
+  color: #ffc000;
+  padding: 0;
+}
+
+
+
+
 
 
 /*    About us   */
@@ -137,9 +181,11 @@ a{
   height: 50%;
   justify-content: space-evenly;
   align-items: center;
-  background: cyan;
+  color: #fff;
+  background: #000;
 }
 .about-text{
+  position: relative;
   margin: 10px;
   padding: 10px;
   width: 50%;
@@ -147,7 +193,17 @@ a{
   text-align: left;
 }
 .about-text h2{
+  position: relative;
   margin: 10px 0 10px 0;
+   padding: 10px;
+}
+.about-text h2::after{
+  content: '';
+  position: absolute;
+  border: 1px solid #b88a44;
+  left: 0;
+  bottom: 0;
+  width: 7%;
 }
 .about-text p{
   margin: 10px 0 10px 0;
@@ -168,28 +224,53 @@ a{
 
 /*   Our Services  */
 .service-container{
-  position: relative;
   padding: 20px;
   width: 100%;
   height: 50%;
-  background: yellow;
+  background: #001;
+  color: #fff;
 }
 .service-head{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.service-head h2{
+  position: relative;
+   padding: 10px;
+}
+.service-head h2::before{
+  content: '';
+  position: absolute;
+  border: 1px solid #b88a44;
+  left: -50%;
+  bottom: 50%;
+  width: 40%;
+}
+.service-head h2::after{
+  content: '';
+  position: absolute;
+  border: 1px solid #b88a44;
+  right: -50%;
+  bottom: 50%;
+  width: 40%;
 }
 .service-cards{
-  margin: 20px;
-  display: flex;
-  justify-content: space-evenly;
+  margin: 10px auto 10px auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns:  repeat(3, minmax(200px, 1fr));
+  grid-gap: 15px 15px;
 }
 .card{
   margin: auto;
-  padding: 10px;
+  padding: 7px;
   display: flex;
-  width: 250px;
-  height: 350px;
+  /*width: 250px;*/
+  height: 260px;
   flex-direction: column;
-  background: pink;
+  background: white;
+  color: #b88a44;
+  border-radius: 2px;
 }
 .card-image{
   margin: 10px 0 0 0;
@@ -214,7 +295,7 @@ a{
 }
 .card .card-text hr{
   margin: 10px;
-  border: 1px solid red;
+  border: 1px solid #b88a44;
 }
 .card-text h2{
   font-size: 1.2em;
@@ -224,14 +305,16 @@ a{
   padding: 7px;
   background: white;
   box-shadow: none;
-  border: 2px solid white;
+  border: 2px solid #b88a44;
   color: black;
   outline: none;
   bottom: 0;
   right: 31%;
 }
 #checkout_button:hover{
-  border: 2px solid red;
+  border: 2px solid #ffc000;
+  background: #ffc000;
+  color: white;
 }
 
 
@@ -239,12 +322,24 @@ a{
 /*    Clients    */
 #clients{
   height: 50vh;
-  background: blue;
+  background: #000;
+}
+.client-container{
+  display: flex;
+  justify-content: center;
 }
 .client-container h2{
-  text-align: center;
+  position: relative;
   padding: 10px;
   color: white;
+}
+.client-container h2::after{
+  content: '';
+  position: absolute;
+  border: 1px solid #b88a44;
+  right: 0;
+  bottom: 0;
+  width: 40%;
 }
 
 
@@ -253,7 +348,7 @@ a{
   display: flex;
   justify-content: center;
   height: 50vh;
-  background: orange;
+  background: #001;
 }
 .getintouch-container{
   width: 50%;
@@ -261,23 +356,25 @@ a{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #b88a44;
+  text-align: center;
 }
 #getintouch-button{
   margin: 10px;
   padding: 5px;
-  border: 2px solid white;
+  border: 2px solid #001;
   font-size: 1em;
   box-shadow: none;
-  /*background: transparent;*/
+  background: #b88a44;
   border-radius: 5%;
   outline: none;
-  /*color: white;*/
+  color: #001;
   transition: .5s;
 }
 #getintouch-button:hover{
-  border: 2px solid red;
-  color: black;
-  background: white;
+  border: 2px solid #b88a44;
+  color: #fff;
+  background: #ffc000;
 }
 
 
@@ -285,6 +382,7 @@ a{
 
 /*   Footer    */
 footer{
+  position: relative;
   display: flex;
   padding: 20px;
   justify-content: space-evenly;
@@ -292,7 +390,17 @@ footer{
   color: white;
 }
 footer h1{
+  position: relative;
+  padding: 0;
   text-align: center;
+}
+footer h1::after{
+  content: '';
+  position: absolute;
+  border: 1px solid #b88a44;
+  right: 25%;
+  bottom: 0;
+  width: 20%;
 }
 footer ul{
   list-style: none;
@@ -328,9 +436,25 @@ footer ul li{
 
 /*!!!!!!!!!!!!!!!!!!!!!ABOUT PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .aboutpage-container{
-  border: 2px solid red;
   position: relative;
   padding: 20px;
+  color: #fff;
+  background: #001;
+}
+.aboutpage-container h2{
+  position: relative;
+  padding: 7px;
+}
+.aboutpage-container h2::after{
+  content: '';
+  position: absolute;
+  border: 1px solid #b88a44;
+  left: 0;
+  bottom: 0;
+  width: 7%;
+}
+.aboutpage-container p, .aboutpage-container h3, .aboutpage-container h2{
+  padding: 10px 0 10px 0;
 }
 
 
@@ -359,10 +483,40 @@ footer ul li{
 
 /*!!!!!!!!!!!!!!!!!!!!!CONTACT PAGE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 .contactpage-container{
-  border: 2px solid red;
   position: relative;
   padding: 20px;
+  background: #001;
+  color: #fff;
+}
+.contactpage-container label{
+  margin: 2px 0 5px 0;
 }
 .contactpage-container h2, .contactpage-container input, .contactpage-container textarea, .contactpage-container button{
   margin: 0 0 10px 0;
+}
+.contactpage-container input, .contactpage-container textarea{
+  width: 50%;
+  border: 1px solid #b88a44;
+  box-shadow: none;
+  outline: none;
+  color: #b88a44;
+  background: #000;
+  font-size: 1em;
+  border-radius: 2px;
+}
+#submit{
+  padding: 5px;
+  border: 2px solid #001;
+  font-size: 1em;
+  box-shadow: none;
+  background: #b88a44;
+  border-radius: 5%;
+  outline: none;
+  color: #001;
+  transition: color .5s, border .5s, background .5s;
+}
+#submit:hover{
+  border: 2px solid #b88a44;
+  color: #fff;
+  background: #ffc000;
 }
