@@ -7,46 +7,95 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+    <!-- pre-loader -->
+  <div id="pre-loader">
+    <!-- <img src="loader.gif"> -->
+  </div>
+
+
+
   <!-------Navbar--------->
   <header>
   <nav>
-    <div class="logo"><a><img src="img/logo1.png"></a></div>
+    <div class="logo"><a href="index.html"><img src="img/logo1.png"></a></div>
       <div class="pages">
         <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
         </ul>
         <button id="getstarted">Get Started</button>
       </div>
       
-    </ul>
   </nav>
   </header>
 
 
-  <section id="services">
-    <div class="servicepage-container">
-      <div class="servicepageheader"><h2>services we provide</h2></div>
-      <!-- cards -->
-      <div class="service-cards">
+ <!----!!!!!Our Services!!!!!-------->
+ <!--------Banner---------->
+  <section id="servicespage-banner">
+    <span class="line"><img src="img/gold-gradient-background.png"></span>
+    <span class="line"><img src="img/gold-gradient-background.png"></span>
+    <span class="line"><img src="img/gold-gradient-background.png"></span>
+   <div class="servicespage-hero-container">
+     <div class="servicespage-hero-text">
+      <p class="pre-title">what we do</p>
+       <h2 class="title">Enhance Your business with our <br><span class="logo-text">expertise<sup><i class="fa-regular fa-registered" style="font-size: .6em;"></i></sup></span></h2>
+     </div>
+     <!-- <div class="hero-image">
+       <img src="img/logo2.png">
+     </div> -->
+     <div class="hero-social">
+       <ul>
+         <li><i class="fa-brands fa-instagram"></i></li>
+         <li><i class="fa-brands fa-whatsapp"></i></li>
+         <li><i class="fa-brands fa-facebook"></i></li>
+         <li><i class="fa-brands fa-telegram"></i></li>
+         <li><i class="fa-brands fa-github"></i></li>
+       </ul>
+     </div>
+   </div>
+  </section>
+
+
+  <section id="ourservicespage">
+
+      <div class="servicepage-container">
+        <div class="servicepage-info">
+          <h2>Services</h2>
+          <h2>Our Special Features To Sky rocket your Online Presence</h2>
+        </div>
+        
+
+
+
+
+
+        <!--------Service cards----------->
+        <div class="servicepage-cards">
           <!----------card1---------->
-          <div class="card">
+          <div id="card1" class="servicepage-card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card1.png">
+              <!-- <img src="img/card1.png"> -->
+              <i class="fa-solid fa-paper-plane" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Content Marketing</h2>
               <hr>
               <p>Lorem ipsum, dolor sit amet consectetur adipisic</p>
-              <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 2------->
-          <div class="card">
+          <div id="card2" class="servicepage-card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card2.png">
+              <!-- <img src="img/card2.png"> -->
+              <i class="fa-solid fa-dollar-sign" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Business Development</h2>
@@ -54,11 +103,15 @@
               <p>Lorem ipsum, dolor sit amet consectetur adip</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 3--------->
-          <div class="card">
+          <div id="card3" class="servicepage-card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card3.png">
+              <!-- <img src="img/card3.png"> -->
+              <i class="fa-regular fa-copyright" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Branding</h2>
@@ -66,11 +119,15 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta modi,</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 4--------->
-          <div class="card">
+          <div id="card4" class="servicepage-card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card4.png">
+              <!-- <img src="img/card4.png"> -->
+              <i class="fa-solid fa-arrow-up-right-dots" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Growth Stategy</h2>
@@ -78,11 +135,15 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta modi,</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 5--------->
-          <div class="card">
+          <div id="card5" class="servicepage-card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card5.png">
+              <!-- <img src="img/card5.png"> -->
+              <i class="fa-solid fa-bullhorn" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Digital Marketing</h2>
@@ -90,11 +151,15 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta modi,</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 6--------->
-          <div class="card">
+          <div id="card6" class="servicepage-card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card1.jpg">
+              <!-- <img src="img/card1.jpg"> -->
+              <i class="fa-solid fa-paper-plane" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Branding</h2>
@@ -102,14 +167,17 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta modi,</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
         </div>
-    </div>
+      </div>
   </section>
 
   
     <!-----!!!Footer!!!!-------->
     <footer>
+      <div class="footer-container">
       <div class="footer-navigation">
         <h1>Quick Links</h1>
         <ul>
@@ -139,6 +207,13 @@
           <li>Kalyan</li>
         </ul>
       </div>
+    </div>
+      <hr>
+      <div class="footer-copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Content Kingdom. All Rights Reserved.</p>
+      </div>
     </footer>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/d847d8776a.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,55 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Content Kingdom</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
+
+  <!-- pre-loader -->
+  <div id="pre-loader">
+    <!--    <div class="loader-img"><img src="img/finalcrown.png" alt="final crown loader"></div> -->
+    <!-- <img src="img/loader.svg"> -->
+  </div>
+
+
+
   <!-------Navbar--------->
   <header>
   <nav>
-    <div class="logo"><a><img src="img/logo1.png"></a></div>
+    <div class="logo"><a href="index.html"><img src="img/logo1.png"></a></div>
       <div class="pages">
         <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
         </ul>
         <button id="getstarted">Get Started</button>
       </div>
       
-    </ul>
   </nav>
   </header>
 
   <!--------Banner---------->
   <section id="banner">
-    <div class="banner-container">
-    <div class="banner-text">
-      <img src="img/logo2.png">
-      <!-- <h2>Some text</h2>
-      <p>some subtitle</p> -->
-    </div>
-    <div class="banner-button">
-      <button id="get_in_touch">Get in Touch</button>
-      <button id="check_out_services">services</button>
-    </div>
-  </div>
+    <span class="line"><img src="img/gold-gradient-background.png"></span>
+    <span class="line"><img src="img/gold-gradient-background.png"></span>
+    <span class="line"><img src="img/gold-gradient-background.png"></span>
+   <div class="hero-container">
+     <div class="hero-text">
+      <p class="pre-title">Supreme in Nature</p>
+       <h2 class="title">Grow Your Online Presence with <br><span class="logo-text">Content Kingdom<sup><i class="fa-regular fa-registered" style="font-size: .6em;"></i></sup></span></h2>
+       <p class="subtitle">Ideating Impactful Content that performs.
+        <br>We don't just create content, We create expereinces!</p>
+        <button id="get-in-touch">Get in Touch</button>
+     </div>
+     <div class="hero-image">
+       <img src="img/logo2.png">
+     </div>
+     <div class="hero-social">
+       <ul>
+         <li><i class="fa-brands fa-instagram"></i></li>
+         <li><i class="fa-brands fa-whatsapp"></i></li>
+         <li><i class="fa-brands fa-facebook"></i></li>
+         <li><i class="fa-brands fa-telegram"></i></li>
+         <li><i class="fa-brands fa-github"></i></li>
+       </ul>
+     </div>
+   </div>
   </section>
 
-  <!-------About us-------------->
-  <section id="aboutus">
-    <div class="about-container">
-      <div class="about-text">
-        <h2>About</h2>
-        <p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Recusandae reiciendis vel tenetur, culpa autem adipisci voluptatem obcaecati, similique unde veniam modi explicabo necessitatibus quod veritatis nostrum eius ipsa, perspiciatis laborum sint molestias natus, id nulla? Pariatur eveniet accusantium eligendi mollitia voluptas, aut ratione enim, voluptatum, hic itaque rerum architecto suscipit deleniti nihil laudantium, aspernatur ex iure. Officiis consectetur explicabo quae, quo error officia voluptas ducimus quisquam, sint quia nulla, sed cumque corrupti quidem repellendus unde eligendi. Quis, velit, aliquam dicta soluta blanditiis eum itaque sed, ipsum quas facere officia repudiandae impedit perferendis laborum recusandae non aut sint odio. Impedit accusamus amet porro asperiores, incidunt optio ad accusantium, aliquam dicta vel.</p>
-      </div>
-      <div class="about-video">
-        <video controls>
-          <source src="vid/vid1.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-  </section>
+
+
+
 
   <!----!!!!!Our Services!!!!!-------->
   <section id="ourservices">
@@ -64,21 +75,26 @@
         <!--------Service cards----------->
         <div class="service-cards">
           <!----------card1---------->
-          <div class="card">
+          <div id="card1" class="card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card1.png">
+              <!-- <img src="img/card1.png"> -->
+              <i class="fa-solid fa-paper-plane" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Content Marketing</h2>
               <hr>
               <p>Lorem ipsum, dolor sit amet consectetur adipisic</p>
-              <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 2------->
-          <div class="card">
+          <div id="card2" class="card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card2.png">
+              <!-- <img src="img/card2.png"> -->
+              <i class="fa-solid fa-dollar-sign" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Business Development</h2>
@@ -86,11 +102,15 @@
               <p>Lorem ipsum, dolor sit amet consectetur adip</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 3--------->
-          <div class="card">
+          <div id="card3" class="card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card3.png">
+              <!-- <img src="img/card3.png"> -->
+              <i class="fa-regular fa-copyright" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Branding</h2>
@@ -98,11 +118,15 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta modi,</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 4--------->
-          <div class="card">
+          <div id="card4" class="card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card4.png">
+              <!-- <img src="img/card4.png"> -->
+              <i class="fa-solid fa-arrow-up-right-dots" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Growth Stategy</h2>
@@ -110,11 +134,15 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta modi,</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 5--------->
-          <div class="card">
+          <div id="card5" class="card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card5.png">
+              <!-- <img src="img/card5.png"> -->
+              <i class="fa-solid fa-bullhorn" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Digital Marketing</h2>
@@ -122,11 +150,15 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta modi,</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
           <!------card 6--------->
-          <div class="card">
+          <div id="card6" class="card">
+            <div class="card-content">
             <div class="card-image">
-              <img src="img/card1.jpg">
+              <!-- <img src="img/card1.jpg"> -->
+              <i class="fa-solid fa-paper-plane" aria-hidden="true" style="font-size: 2em;"></i>
             </div>
             <div class="card-text">
               <h2>Branding</h2>
@@ -134,10 +166,49 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta modi,</p>
               <!-- <button id="checkout_button">Check out</button> -->
             </div>
+            <button id="learn_more">learn more <i class="fa-solid fa-angle-right" style="margin: 0 2px 0 2px;"></i></button>
+          </div>
           </div>
         </div>
       </div>
   </section>
+
+  <!-------Home Video-------------->
+  <section id="home-video">
+  <div class="home-video">
+    <div class="vid">
+        <video muted loop>
+          <source src="vid/CK VID 1.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    </div>
+    </section>
+
+
+
+  <!-------About us-------------->
+  <section id="aboutus">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Welcome to the Kingdom</h2>
+        <p class="about-para">Greetings,<br>
+        We are content kingdom®<br>
+      founded in 2019, CK® has become a one stop solution with an experience of 3+ years
+      in delivering high quality 360° digital marketing services. our team has a single mission statement <br><span class="statement">your vision, our responsibility.</span></p>
+      </div>
+      <!-- <div class="about-video">
+        <video controls>
+          <source src="vid/CK VID 1.mp4" type="video/mp4">
+        </video>
+      </div> -->
+      <div class="about-image">
+       <img src="img/logo2.png">
+     </div>
+    </div>
+  </section>
+
+  
 
 
 
@@ -147,23 +218,60 @@
         <div class="client-head">
         <h2>Clients</h2>
         </div>
+        <div class="client-card">
+          <!-- client1 -->
+          <div class="ccard">
+            <div class="ccard-img">
+            <img src="img/logo1.png">
+            </div>
+          </div>
+          <!-- client2 -->
+          <div class="ccard">
+            <div class="ccard-img">
+            <img src="img/logo1.png">
+            </div>
+          </div>
+          <!-- client3 -->
+          <div class="ccard">
+            <div class="ccard-img">
+            <img src="img/logo1.png">
+            </div>
+          </div>
+          <!-- client4 -->
+          <div class="ccard">
+            <div class="ccard-img">
+            <img src="img/logo1.png">
+            </div>
+          </div>
+          <!-- client5 -->
+          <div class="ccard">
+            <div class="ccard-img">
+            <img src="img/logo1.png">
+            </div>
+          </div>
+          <div class="ccard">
+            
+          </div>
+        </div>
       </div>
     </section>
 
     <!-----!!!!Get in touch!!!!!----->
     <section id="getintouch">
       <div class="getintouch-container">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quidem corporis nostrum facere quas ab autem officiis et beatae, ex nemo, quaerat! Perferendis earum cumque aperiam veritatis, labore nihil. Sequi non qui nemo unde.</p>
+        <p id="getintouch-text">Do you want to be a part of our Kingdom?</p>
+
         <button id="getintouch-button">Get in touch</h2>  
       </div>
       
     </section>
     <!-----!!!Footer!!!!-------->
     <footer>
+      <div class="footer-container">
       <div class="footer-navigation">
         <h1>Quick Links</h1>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -189,7 +297,14 @@
           <li>Kalyan</li>
         </ul>
       </div>
+    </div>
+      <hr>
+      <div class="footer-copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Content Kingdom. All Rights Reserved.</p>
+      </div>
     </footer>
     <script src="main.js"></script>
+    <script src="transition.js"></script>
+    <script src="https://kit.fontawesome.com/d847d8776a.js" crossorigin="anonymous"></script>
 </body>
 </html>

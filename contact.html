@@ -7,42 +7,80 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+
+    <!-- pre-loader -->
+  <div id="pre-loader">
+    <!-- <img src="loader.gif"> -->
+  </div>
+
+  
   <!-------Navbar--------->
   <header>
   <nav>
-    <div class="logo"><a><img src="img/logo1.png"></a></div>
+    <div class="logo"><a href="index.html"><img src="img/logo1.png"></a></div>
       <div class="pages">
         <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
         <button id="getstarted">Get Started</button>
       </div>
       
-    </ul>
   </nav>
   </header>
-
   <section id="contactpage">
     <div class="contactpage-container">
-      <h2>Let's get started</h2>
+      <div class="contactpage-info">
+        <div class="iconBox">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="icon-text">
+            <h3>Phone</h3>
+            <p>9099909990</s>
+          </div>
+          </div>
+        
+
+        <div class="iconBox">
+          <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="icon-text">
+            <h3>Whatsapp</h3>
+            <p>9099785470</s>
+          </div>
+          </div>
+
+
+          <div class="iconBox">
+          <div class="icon"><i class="fa-regular fa-envelope"></i></div>
+          <div class="icon-text">
+            <h3>Email</h3>
+            <p>something@gmail.com</p>
+          </div>
+          </div>
+      </div>
+
+
+      <div class="contactpage-form">
+      <div class="contactpage-header"><h2>Let's Reign</h2></div>
       <form action="index.html">
-        <label for="username">Username</label><br>
-        <input type="text" name="username"><br>
-        <label for="password">Password</label><br>
-        <input type="password" name="password"><br>
-        <label for="comment">Comment</label><br>
-        <textarea name="comment" id="comment" cols="30" rows="10"></textarea><br>
+        <!-- <label for="username">Username</label><br> <--></-->
+        <input type="text" name="username" placeholder="Enter Your Name" required><br>
+        <!-- <label for="password">Password</label><br> -->
+        <input type="text" name="email" placeholder="Enter Your Email" required><br>
+        <!-- <label for="comment">Comment</label><br> -->
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write To Us..." required></textarea><br>
         <button id="submit">Submit</button>
       </form>
+    </div>
+
     </div>
   </section>
 
   
     <!-----!!!Footer!!!!-------->
     <footer>
+      <div class="footer-container">
       <div class="footer-navigation">
         <h1>Quick Links</h1>
         <ul>
@@ -72,6 +110,13 @@
           <li>Kalyan</li>
         </ul>
       </div>
+    </div>
+      <hr>
+      <div class="footer-copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 Content Kingdom. All Rights Reserved.</p>
+      </div>
     </footer>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/d847d8776a.js" crossorigin="anonymous"></script>
 </body>
 </html>
